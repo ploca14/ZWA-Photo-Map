@@ -1,3 +1,12 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\DefaultController::index
+
+login:
+  path: /prihlasit
+  controller: App\Controller\SecurityController::login
+  methods: GET|POST
+
+logout:
+  path: /logout
+  methods: GET
