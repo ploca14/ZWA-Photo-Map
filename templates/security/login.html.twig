@@ -1,0 +1,55 @@
+{% extends '/base.html.twig' %}
+
+{% block body %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="login-wrapper col-md-8 col-lg-6 col-xl-5">
+        <div class="login-container">
+          <div class="login-header">
+            <h1>Přihlásit se</h1>
+            <a href="{{ path('index') }}">
+              <i class="eva eva-2x eva-close-outline"></i>
+            </a>
+          </div>
+          {% if error %}
+            <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+          {% endif %}
+
+          <form method="post">
+            <div class="input-wrapper">
+              <label for="username">E-mail</label>
+              <input
+                type="text"
+                id="username"
+                name="_username"
+                value="{{ last_username }}"
+                placeholder="name@fel.cvut.cz"
+                class="input-base"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="password">Heslo</label>
+              <input
+                type="password"
+                id="password"
+                name="_password"
+                placeholder="Heslo"
+                class="input-base"
+              />
+            </div>
+
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token('login') }}">
+
+            <button type="submit" class="btn btn-primary">Přihlásit</button>
+          </form>
+
+          <p class="no-account">Ještě nemáš účet? <a href="{# TODO: Add link to registration #}">Zaregistruj se</a></p>
+        </div>
+      </div>
+      <div class="col">
+        <img src="{{ asset('build/images/cover.jpg') }}" alt="Pozadí" class="img-cover">
+      </div>
+    </div>
+  </div>
+{% endblock %}

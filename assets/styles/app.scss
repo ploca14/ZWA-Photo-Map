@@ -1,4 +1,21 @@
-body {
-    font-family: sans-serif;
-    color: red;
-}
+// Bootstrap variable overrides
+@import "variables";
+
+@import "~eva-icons/style/scss/eva-icons";
+
+// Required bootstrap files
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Grid system and reboot
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+
+// Components
+@import "components/forms";
+@import "components/header";
+
+// Pages
+@import "pages/login";
+@import "pages/homepage";

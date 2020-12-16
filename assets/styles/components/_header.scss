@@ -1,0 +1,34 @@
+.header {
+  box-shadow: 0 0 1rem rgba(0,0,0,0.15);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
+
+  .nav-item {
+    list-style: none;
+    margin-left: 1rem;
+
+    .nav-link {
+      font-weight: 700;
+      color: $navbar-light-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-light-color;
+      }
+
+      &.active {
+        color: $navbar-light-active-color;
+      }
+    }
+  }
+}

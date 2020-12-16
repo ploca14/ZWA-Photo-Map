@@ -1,0 +1,11 @@
+.left-side {
+  height: calc(100vh - 76px);
+  padding-top: $spacer * 6;
+  box-shadow: $box-shadow;
+  overflow: auto;
+
+  @include media-breakpoint-up(xl) {
+    padding-left: $spacer * 4;
+    padding-right: $spacer * 4;
+  }
+}

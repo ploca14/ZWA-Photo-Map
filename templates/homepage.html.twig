@@ -1,9 +1,21 @@
-{% extends 'base.html.twig' %}
+{% extends 'layout.html.twig' %}
 
-{% block body %}
-  {% if app.user %}
-    <h1>Hello {{ app.user.name }}!</h1>
-  {% else %}
-    <h1>Hello Anonymous!</h1>
-  {% endif %}
+{% block content %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 left-side">
+        <div class="container">
+          {% if app.user %}
+            <h1>Ahoj {{ name }}</h1>
+          {% else %}
+            <h1>Hello Anonymous!</h1>
+            <p>You might want to <a href="{{ path('login') }}">login</a></p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h1>map goes here</h1>
+      </div>
+    </div>
+  </div>
 {% endblock %}

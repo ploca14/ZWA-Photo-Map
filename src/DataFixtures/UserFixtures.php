@@ -10,10 +10,7 @@ use Doctrine\Persistence\ObjectManager;
 class UserFixtures extends Fixture
 {
     public const AvailableUserNames = [
-        'Charlie', 'Riley', 'David', 'Stevie', 'Toby', 'Karel',
-        'Kai', 'Jordan', 'Jules', 'Harper', 'Glenn', 'Gray',
-        'Elliott', 'Lenka', 'Devin', 'Delta', 'Petra', 'Michaela',
-        'Cameron', 'Campbell', 'Brett', 'Bailey', 'Avery', 'Aubrey',
+        'Riley', 'David', 'Stevie', 'Toby', 'Karel',
         'Oliver', 'Ash', 'Andy', 'Alex', 'Michal', 'Petr'
     ];
 
@@ -40,6 +37,18 @@ class UserFixtures extends Fixture
             $this->addReference('user-' . strtolower($name), $user);
         }
 
+        $user = new User();
+
+        $user->setEmail('charlie@fel.cvut.cz');
+        $user->setName('Charlie');
+        $user->setPassword($this->passwordEncoder->encodePassword(
+            $user,
+            'heslo123'
+        ));
+        $user->setRoles(['ROLE_ADMIN']);
+
+        $manager->persist($user);
+        $this->addReference('user-charlie', $user);
 
         $manager->flush();
     }
