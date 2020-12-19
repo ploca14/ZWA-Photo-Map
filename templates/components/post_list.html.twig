@@ -1,0 +1,25 @@
+{% if posts is defined %}
+    {% for post in posts %}
+      <figure class="post">
+        <a href="{{ path('post_show', {'id': post.id}) }}" class="post-wrapper">
+          <img
+            class="post-photo"
+            src="{{ asset('uploads/photos/' ~ post.photoFilename) | imagine_filter('my_thumb') }}"
+            alt="{{ post.title }}"
+            width="250"
+          >
+          <figcaption class="post-details">
+            <h2 class="post-title">{{ post.title }}</h2>
+            <p class="post-description">{{ post.description }}</p>
+          </figcaption>
+        </a>
+        {% if app.user %}
+          <like-button
+            id="{{ post.id }}"
+            {% if post.isLiked %}liked{% endif %}
+          >
+          </like-button>
+        {% endif %}
+      </figure>
+    {% endfor %}
+{% endif %}

@@ -4,10 +4,11 @@
         <meta charset="UTF-8">
         <title>{% block title %}Semestrální práce{% endblock %}</title>
         {{ encore_entry_link_tags('style') }}
-        {{ encore_entry_script_tags('app') }}
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
     </body>
 </html>

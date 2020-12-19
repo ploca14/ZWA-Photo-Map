@@ -1,1 +1,3 @@
-console.log('Hello Webpack Encore! Edit me in assets/app.js');
+import LikeButton from "./js/likeButton";
+
+window.customElements.define('like-button', LikeButton);

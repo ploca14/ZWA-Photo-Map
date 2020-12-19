@@ -1,6 +1,6 @@
 .left-side {
   height: calc(100vh - 76px);
-  padding-top: $spacer * 6;
+  padding-top: $spacer * 4;
   box-shadow: $box-shadow;
   overflow: auto;
 
@@ -8,4 +8,22 @@
     padding-left: $spacer * 4;
     padding-right: $spacer * 4;
   }
+}
+
+.slogan {
+  margin-bottom: $spacer * 2;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    color: $secondary;
+    font-size: 1.5rem;
+  }
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $gray-300;
 }

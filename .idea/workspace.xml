@@ -5,36 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af7776ec-f8c0-4021-892f-d1d9094400ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/cover.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/components/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/components/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/pages/_homepage.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/pages/_login.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/layout.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/layout/header.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/likeButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styles/components/_post.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/SecurityUtils.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/HomepageView.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/components/post_list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e9d1303e-85da-4eae-a826-c3efe816b844.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e9d1303e-85da-4eae-a826-c3efe816b844.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/projekt_zwa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projekt_zwa.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/pages/_homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/pages/_homepage.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/homepage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +43,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -162,6 +157,9 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/granam/czech-vocative" />
+      <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/vendor/liip/imagine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/templating" />
     </include_path>
   </component>
   <component name="ProjectId" id="1l4LBVdctavvtVmRug5gOXbI4rw" />
@@ -182,11 +180,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Projekty\Webovky\projekt_zwa\assets\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projekty\Webovky\projekt_zwa\templates\security" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projekty\Webovky\projekt_zwa\assets\images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -200,7 +198,11 @@
       <workItem from="1606851286434" duration="7555000" />
       <workItem from="1606893977606" duration="6083000" />
       <workItem from="1606982681439" duration="29000" />
-      <workItem from="1608146365467" duration="13197000" />
+      <workItem from="1608146365467" duration="13374000" />
+      <workItem from="1608196337225" duration="1092000" />
+      <workItem from="1608232425402" duration="12537000" />
+      <workItem from="1608297532073" duration="7577000" />
+      <workItem from="1608399405563" duration="7006000" />
     </task>
     <servers />
   </component>
@@ -220,25 +222,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608158316867" />
-    <state x="734" y="247" key="NewPhpClassDialog" timestamp="1606859530933">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608401532705">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="734" y="247" key="NewPhpClassDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606859530933" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608303209634" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040/-5760.0.2194.1194@0.0.1920.1040" timestamp="1608401532705" />
+    <state x="1002" y="268" key="NewPhpClassDialog" timestamp="1608403176299">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1002" y="268" key="NewPhpClassDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608305568828" />
+    <state x="1002" y="268" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040/-5760.0.2194.1194@0.0.1920.1040" timestamp="1608401069802" />
+    <state x="1002" y="268" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608403176299" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1608148709716">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608148709716" />
+    <state x="851" y="410" width="311" height="250" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1608302781446">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="851" y="410" width="311" height="250" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608302781446" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608305670859">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608305670859" />
     <state x="-1281" y="159" width="805" height="716" maximized="true" key="dock-window-1" timestamp="1606856966590">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1281" y="159" width="805" height="716" maximized="true" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606856966590" />
-    <state x="668" y="257" width="583" height="526" key="find.popup" timestamp="1608157224855">
+    <state x="668" y="257" width="583" height="526" key="find.popup" timestamp="1608240911416">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="257" width="583" height="526" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608157224855" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608158790757">
+    <state x="668" y="257" width="583" height="526" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608240911416" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608406365515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608158790757" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608302202942" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/-5760.0.2194.1194@0.0.1920.1040" timestamp="1608400976654" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608406365515" />
   </component>
 </project>

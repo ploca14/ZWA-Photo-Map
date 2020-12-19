@@ -1,0 +1,33 @@
+.post {
+  display: flex;
+  margin-bottom: 0;
+  padding: 3rem 0;
+  border-bottom: 1px solid $gray-300;
+  align-items: flex-start;
+
+  &-wrapper {
+    display: flex;
+    text-decoration: none !important;
+    color: $body-color;
+  }
+
+  &-details {
+    margin-left: 2rem;
+    margin-right: 1rem;
+    flex: 1;
+  }
+
+  &-description {
+    color: $secondary;
+  }
+
+  &-photo {
+    border-radius: 1rem;
+  }
+
+  .eva-heart, .eva-heart-outline {
+    color: $danger;
+    cursor: pointer;
+  }
+}
+
