@@ -1,0 +1,45 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block inner %}
+    <div class="post-detail">
+        <img
+          class="post-photo"
+          src="{{ post.photo }}"
+          alt="{{ post.title }}"
+        >
+
+        <div class="post-details">
+            <div class="post-title">
+                <h1>{{ post.title }}</h1>
+                {% if app.user %}
+                    <like-button
+                      id="{{ post.id }}"
+                      class="like-button"
+                      {% if post.isLiked %}liked{% endif %}
+                    ></like-button>
+                    <noscript>
+                        <a href="{{ path('like_post', {id: post.id}) }}">
+                            <i class="eva eva-2x eva-heart{% if not post.isLiked %}-outline{% endif %}"></i>
+                        </a>
+                    </noscript>
+                {% endif %}
+            </div>
+
+            <p class="post-description">
+                {{ post.description }}
+            </p>
+
+            <post-map posts="{{ [post]|json_encode }}" class="map-wrapper"></post-map>
+
+            {% if is_granted('ROLE_ADMIN') %}
+                {{ include('post/_delete_form.html.twig') }}
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block additionalJavascripts %}
+    {{ encore_entry_script_tags('detail') }}
+{% endblock %}

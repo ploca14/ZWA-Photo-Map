@@ -3,22 +3,36 @@
 {% block content %}
   <div class="container-fluid">
     <div class="row">
-      <main class="col-md-6 left-side">
-        <article class="container">
+      <main class="col-lg-6 left-side">
+        <div class="container">
           <div class="slogan">
             {% if app.user %}
-                <h1>Ahoj {{ name }},</h1>
-                <p>prozkoumej nová místa na focení</p>
+              <h1>Ahoj {{ name }},</h1>
+              <div class="slogan-lower">
+                {% if isFiltered %}
+                  <p>zde jsou tvá oblíbená místa</p>
+                  <a href="{{ path('index') }}">Zobrazit vše</a>
+                {% else %}
+                  <p>prozkoumej nová místa na focení</p>
+                  <a href="{{ path('index', {'filter_slug': 'favourite'}) }}">Jen oblíbené</a>
+                {% endif %}
+              </div>
             {% else %}
               <h1>Prozkoumej nové místa na focení</h1>
             {% endif %}
           </div>
           <hr>
           {% include 'components/post_list.html.twig' %}
-        </article>
+          {{ knp_pagination_render(paginator) }}
+        </div>
       </main>
-      <aside class="col-md-6">
-        <h1>map goes here</h1>
+      <aside class="col-lg-6">
+        <div class="map-wrapper">
+          <post-map posts="{{ posts|json_encode }}"></post-map>
+          <noscript>
+            <img id="map" src="https://www.mapquestapi.com/staticmap/v4/getmap?{{ staticMapUrl }}" alt="">
+          </noscript>
+        </div>
       </aside>
     </div>
   </div>

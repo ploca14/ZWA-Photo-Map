@@ -16,19 +16,19 @@ class Like
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
+    private int $id;
 
     /**
      * @ORM\ManyToOne(targetEntity=User::class)
      * @ORM\JoinColumn(nullable=false)
      */
-    private $user;
+    private User $user;
 
     /**
      * @ORM\ManyToOne(targetEntity=Post::class, inversedBy="likes")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $post;
+    private Post $post;
 
     /**
      * @param User $user
@@ -50,7 +50,7 @@ class Like
         return $this->user;
     }
 
-    public function setUser(?User $user): self
+    public function setUser(User $user): self
     {
         $this->user = $user;
 
@@ -62,7 +62,7 @@ class Like
         return $this->post;
     }
 
-    public function setPost(?Post $post): self
+    public function setPost(Post $post): self
     {
         $this->post = $post;
 

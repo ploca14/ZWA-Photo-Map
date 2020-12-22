@@ -8,15 +8,22 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-// Grid system and reboot
+// Other bootstrap parts
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/pagination";
 
 // Components
 @import "components/forms";
 @import "components/header";
 @import "components/post";
+@import "components/like";
 
 // Pages
 @import "pages/login";
 @import "pages/homepage";
+@import "pages/add";
+@import "pages/detail";
+
+// Print
+@import "print";

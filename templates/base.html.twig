@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block title %}Semestrální práce{% endblock %}</title>
         {{ encore_entry_link_tags('style') }}
     </head>
     <body>
         {% block body %}{% endblock %}
         {% block javascripts %}
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNXUeBIVefatlIu22VWJHV48iyYR8tOvk"></script>
             {{ encore_entry_script_tags('app') }}
+            {% block additionalJavascripts %}{% endblock %}
         {% endblock %}
     </body>
 </html>

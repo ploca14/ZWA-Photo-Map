@@ -1,20 +1,45 @@
 .header {
+  position: fixed;
+  top: 0;
+  height: $header-height;
+  width: 100%;
+  background: $white;
   box-shadow: 0 0 1rem rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1.5rem;
+  }
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem .5rem;
+
+  @include media-breakpoint-up(sm) {
+    padding: 1rem 2rem;
+  }
 }
 
 .navbar-nav {
   display: flex;
   align-items: center;
   margin: 0 0 0 auto;
+  padding: 0;
 
   .nav-item {
     list-style: none;
+    white-space: nowrap;
     margin-left: 1rem;
 
     .nav-link {
@@ -30,5 +55,19 @@
         color: $navbar-light-active-color;
       }
     }
+
+    .btn {
+      span {
+        display: none;
+
+        @include media-breakpoint-up(sm) {
+          display: inline-block;
+        }
+      }
+    }
   }
+}
+
+.page-content {
+  margin-top: $header-height;
 }

@@ -54,12 +54,29 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator implements P
         $this->passwordEncoder = $passwordEncoder;
     }
 
+    /**
+     * Called on every request - return true if the user POSTs to the login route
+     * If this method returns true Symfony will automatically call getCredentials()
+     *
+     * @see getCredentials()
+     * @param Request $request
+     * @return bool
+     */
     public function supports(Request $request)
     {
         return self::LOGIN_ROUTE === $request->attributes->get('_route')
             && $request->isMethod('POST');
     }
 
+
+    /**
+     * Reads the authentication credentials off of the request and returns them
+     * After this method runs Symfony immediately runs getUser()
+     *
+     * @see getUser()
+     * @param Request $request
+     * @return array|mixed
+     */
     public function getCredentials(Request $request)
     {
         $credentials = [
@@ -75,6 +92,16 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator implements P
         return $credentials;
     }
 
+
+    /**
+     * Find and return the User object based on the credentials provided
+     * If this method returns a User object, Symfony immediately calls checkCredentials()
+     *
+     * @see checkCredentials()
+     * @param mixed $credentials
+     * @param UserProviderInterface $userProvider
+     * @return object|UserInterface|null
+     */
     public function getUser($credentials, UserProviderInterface $userProvider)
     {
         $token = new CsrfToken('login', $credentials['csrf_token']);
@@ -84,27 +111,32 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator implements P
 
         $user = $this->entityManager->getRepository(User::class)->findOneBy(['email' => $credentials['email']]);
 
-        if (!$user) {
-            // fail authentication with a custom error
-            throw new CustomUserMessageAuthenticationException('Email could not be found.');
-        }
-
         return $user;
     }
 
+
+    /**
+     * Returns if the users password is correct
+     * If this method returns true, Symfony calls onAuthenticationSuccess()
+     *
+     * @see onAuthenticationSuccess()
+     * @param mixed $credentials
+     * @param UserInterface $user
+     * @return bool
+     */
     public function checkCredentials($credentials, UserInterface $user)
     {
         return $this->passwordEncoder->isPasswordValid($user, $credentials['password']);
     }
 
     /**
-     * Used to upgrade (rehash) the user's password automatically over time.
+     * Redirects user back to the previous page
+     *
+     * @param Request $request
+     * @param TokenInterface $token
+     * @param string $providerKey
+     * @return RedirectResponse|\Symfony\Component\HttpFoundation\Response|null
      */
-    public function getPassword($credentials): ?string
-    {
-        return $credentials['password'];
-    }
-
     public function onAuthenticationSuccess(Request $request, TokenInterface $token, string $providerKey)
     {
         if ($targetPath = $this->getTargetPath($request->getSession(), $providerKey)) {
@@ -112,7 +144,23 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator implements P
         }
     }
 
-    protected function getLoginUrl()
+    /**
+     * Used to upgrade (rehash) the user's password automatically over time
+     *
+     * @param $credentials
+     * @return string|null
+     */
+    public function getPassword($credentials): ?string
+    {
+        return $credentials['password'];
+    }
+
+    /**
+     * Generates a url for the login page
+     *
+     * @return string
+     */
+    protected function getLoginUrl(): string
     {
         return $this->urlGenerator->generate(self::LOGIN_ROUTE);
     }

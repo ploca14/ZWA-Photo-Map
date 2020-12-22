@@ -49,25 +49,12 @@ class SecurityUtils
 
 
     /**
+     * Return whether user is logged in or not
+     *
      * @return bool
      */
     public function isUserLoggedIn(): bool
     {
         return (bool)$this->getUser();
-    }
-
-    /**
-     * @return Entity\User
-     */
-    public function getLoggedInUser(): Entity\User
-    {
-        if (
-            !($token = $this->tokenStorage->getToken())
-            || !($user = $token->getUser()) instanceof Entity\User
-        ) {
-            throw new AuthenticationException();
-        }
-
-        return $user;
     }
 }

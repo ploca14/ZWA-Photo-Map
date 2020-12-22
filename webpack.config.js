@@ -14,10 +14,11 @@ Encore
     .setPublicPath('/build')
 
 
-    .addEntry('app', './assets/app.js')
     .addStyleEntry('style', './assets/styles/app.scss')
-    //.addEntry('page1', './assets/page1.js')
-    //.addEntry('page2', './assets/page2.js')
+    .addEntry('app', './assets/js/app.js')
+    .addEntry('login', './assets/js/login.js')
+    .addEntry('add', './assets/js/add.js')
+    .addEntry('detail', './assets/js/detail.js')
 
     .addPlugin(new CopyWebpackPlugin([
       { from: 'assets/images', to: 'images' },

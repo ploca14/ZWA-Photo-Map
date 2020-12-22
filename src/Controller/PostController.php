@@ -5,27 +5,38 @@ namespace App\Controller;
 use App\Entity\Like;
 use App\Entity\Post;
 use App\Form\PostType;
-use App\Repository\PostRepository;
+use App\Service\UploadHelper;
+use App\View\PostDetailView;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\String\Slugger\SluggerInterface;
 
-/**
- * @Route("/post")
- */
 class PostController extends AbstractController
 {
     /**
-     * @Route("/new", name="post_new", methods={"GET","POST"})
+     * Post detail
+     *
+     * @param Post $post
+     * @param PostDetailView $view
+     * @return Response
+     * @see /config/routes.yaml
+     */
+    public function detail(Post $post, PostDetailView $view): Response
+    {
+        return $this->render('post/detail.html.twig', $view->create($post));
+    }
+
+    /**
+     * Add new post - Renders and handles the new post form
+     *
      * @param Request $request
-     * @param SluggerInterface $slugger
+     * @param UploadHelper $uploadHelper
+     * @see /config/routes.yaml
      * @return Response
      */
-    public function new(Request $request, SluggerInterface $slugger): Response
+    public function new(Request $request, UploadHelper $uploadHelper): Response
     {
         $post = new Post();
         $form = $this->createForm(PostType::class, $post);
@@ -34,98 +45,88 @@ class PostController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
 
             /** @var UploadedFile $photoFile */
-            $photoFile = $form->get('photo')->getData();
-            $originalFilename = pathinfo($photoFile->getClientOriginalName(), PATHINFO_FILENAME);
-            $safeFilename = $slugger->slug($originalFilename);
-            $newFilename = $safeFilename.'-'.uniqid().'.'.$photoFile->guessExtension();
-
-            $photoFile->move(
-                $this->getParameter('upload_directory'),
-                $newFilename
-            );
-
-            $post->setPhotoFilename($newFilename);
+            if ($photoFile = $form['photo']->getData()) {
+                $newFilename = $uploadHelper->uploadPostPhoto($photoFile);
+                $post->setPhotoFilename($newFilename);
+            }
 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($post);
             $entityManager->flush();
 
-            return $this->redirectToRoute('post_index');
+            return $this->redirectToRoute('index');
         }
 
-        return $this->render('post/new.html.twig', [
-            'post' => $post,
+        return $this->render('post/add.html.twig', [
             'form' => $form->createView(),
         ]);
     }
 
     /**
+     * Post like AJAX - Returns JSON response of true when post has been successfully liked
+     *                  and a JSON response of false when post has been successfully unliked
+     *
      * @param Post $post
      * @param EntityManagerInterface $entityManager
      * @return \Symfony\Component\HttpFoundation\JsonResponse
      */
-    public function postLike(Post $post, EntityManagerInterface $entityManager) {
+    public function postLikeAjax(Post $post, EntityManagerInterface $entityManager) {
+        $this->denyAccessUnlessGranted('ROLE_USER');
         $user = $this->getUser();
 
-        if ($user) {
-            if ($like = $post->getReactionForUser($user)) {
-                $entityManager->remove($like);
-                $response = false;
-            } else {
-                $like = new Like($user, $post);
-                $entityManager->persist($like);
-                $response = true;
-            }
-
-            $entityManager->flush();
-
-            return $this->json($response, Response::HTTP_OK);
+        if ($like = $post->getReactionForUser($user)) {
+            $entityManager->remove($like);
+            $response = false;
+        } else {
+            $like = new Like($user, $post);
+            $entityManager->persist($like);
+            $response = true;
         }
 
-        return $this->json('Nejsi přihlášen', Response::HTTP_BAD_REQUEST);
+        $entityManager->flush();
+
+        return $this->json($response, Response::HTTP_OK);
     }
 
     /**
-     * @Route("/{id}", name="post_show", methods={"GET"})
+     * Post like fallback
+     *
+     * @param Post $post
+     * @param EntityManagerInterface $entityManager
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
-    public function show(Post $post): Response
-    {
-        return $this->render('post/show.html.twig', [
-            'post' => $post,
-        ]);
-    }
+    public function postLike(Post $post, EntityManagerInterface $entityManager) {
+        $this->denyAccessUnlessGranted('ROLE_USER');
 
-    /**
-     * @Route("/{id}/edit", name="post_edit", methods={"GET","POST"})
-     */
-    public function edit(Request $request, Post $post): Response
-    {
-        $form = $this->createForm(PostType::class, $post);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            $this->getDoctrine()->getManager()->flush();
-
-            return $this->redirectToRoute('post_index');
+        if ($like = $post->getReactionForUser($user)) {
+            $entityManager->remove($like);
+        } else {
+            $like = new Like($user, $post);
+            $entityManager->persist($like);
         }
 
-        return $this->render('post/edit.html.twig', [
-            'post' => $post,
-            'form' => $form->createView(),
-        ]);
+        $entityManager->flush();
+
+        return $this->redirectToRoute('index');
     }
 
     /**
-     * @Route("/{id}", name="post_delete", methods={"DELETE"})
+     * Post delete - Handles the delete post request
+     *
+     * @param Request $request
+     * @param Post $post
+     * @return Response
      */
     public function delete(Request $request, Post $post): Response
     {
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
+
         if ($this->isCsrfTokenValid('delete'.$post->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($post);
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('post_index');
+        return $this->redirectToRoute('index');
     }
 }

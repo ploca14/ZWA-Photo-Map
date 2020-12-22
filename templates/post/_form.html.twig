@@ -1,4 +1,50 @@
+{% form_theme form 'components/form_errors.html.twig' %}
+
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+    <div class="input-wrapper">
+        {{ form_label(form.title) }}
+        {{ form_widget(form.title, {'attr': {'class': 'input-base'}}) }}
+        {{ form_errors(form.title) }}
+    </div>
+
+    <div class="input-wrapper">
+        {{ form_label(form.description) }}
+        {{ form_widget(form.description, {'attr': {'class': 'input-base'}}) }}
+        {{ form_errors(form.description) }}
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-wrapper">
+                {{ form_label(form.photo) }}
+                {{ form_widget(form.photo, {'attr': {'class': 'input-base custom-file'}}) }}
+                {{ form_errors(form.photo) }}
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img is="photo-preview" src="#" alt="Ukázka fotky" id="photo-preview">
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-wrapper">
+                {{ form_label(form.latitude) }}
+                {{ form_widget(form.latitude, {'attr': {'class': 'input-base'}}) }}
+                {{ form_errors(form.latitude) }}
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-wrapper">
+                {{ form_label(form.longitude) }}
+                {{ form_widget(form.longitude, {'attr': {'class': 'input-base'}}) }}
+                {{ form_errors(form.longitude) }}
+            </div>
+        </div>
+    </div>
+
+
+
+    <button class="btn btn-primary">Přidat</button>
 {{ form_end(form) }}

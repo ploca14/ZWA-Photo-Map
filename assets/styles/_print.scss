@@ -1,0 +1,39 @@
+@media print {
+  .header, .pagination {
+    display: none;
+  }
+
+  .page-content {
+    margin-top: 0;
+
+    .container-fluid .row {
+      display: block;
+    }
+  }
+
+  .left-side {
+    max-width: 100%;
+    padding: 0;
+    box-shadow: none;
+
+    .container {
+      max-width: none;
+    }
+
+    .post {
+      break-inside: avoid;
+    }
+  }
+
+  aside.col-lg-6 {
+    max-width: 100%;
+
+    .map-wrapper {
+      page-break-before: always;
+      position: static;
+      width: 100%;
+      height: 600px;
+    }
+  }
+
+}

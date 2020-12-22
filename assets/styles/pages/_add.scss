@@ -1,0 +1,27 @@
+.add-post {
+  padding: 3rem 0;
+  max-width: 600px;
+  margin: 0 auto;
+
+  #photo-preview {
+    display: none;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+  }
+}
+
+.required-fields {
+  font-size: $font-size-sm;
+  text-align: center;
+  margin-top: 1.5rem;
+  color: $secondary;
+
+  .asterisk {
+    color: #dc3545;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 1.5rem;
+  }
+}

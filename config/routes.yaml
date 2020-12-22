@@ -1,6 +1,10 @@
 index:
-    path: /
+    path: /{filter_slug}
     controller: App\Controller\DefaultController::index
+    defaults:
+      filter_slug: null
+    requirements:
+      filter_slug: 'favourite'
 
 login:
   path: /prihlasit
@@ -11,7 +15,26 @@ logout:
   path: /logout
   methods: GET
 
-likePost:
+post_add:
+  path: /prispevek/pridat
+  controller: App\Controller\PostController::new
+  methods: GET|POST
+
+post_detail:
+  path: /prispevek/{id}
+  controller: App\Controller\PostController::detail
+  methods: GET
+
+post_delete:
+  path: /prispevek/{id}
+  methods: DELETE
+
+like_post:
   path: /post/{id}/like
   controller: App\Controller\PostController::postLike
+  methods: GET
+
+like_post_ajax:
+  path: /post/{id}/like
+  controller: App\Controller\PostController::postLikeAjax
   methods: POST

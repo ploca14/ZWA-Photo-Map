@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                                <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/app.html"><abbr title="\App">App</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/app-controller.html"><abbr title="\App\Controller">Controller</abbr></a></li>
+                                            <li><a href="namespaces/app-datafixtures.html"><abbr title="\App\DataFixtures">DataFixtures</abbr></a></li>
+                                            <li><a href="namespaces/app-entity.html"><abbr title="\App\Entity">Entity</abbr></a></li>
+                                            <li><a href="namespaces/app-form.html"><abbr title="\App\Form">Form</abbr></a></li>
+                                            <li><a href="namespaces/app-repository.html"><abbr title="\App\Repository">Repository</abbr></a></li>
+                                            <li><a href="namespaces/app-security.html"><abbr title="\App\Security">Security</abbr></a></li>
+                                            <li><a href="namespaces/app-service.html"><abbr title="\App\Service">Service</abbr></a></li>
+                                            <li><a href="namespaces/app-view.html"><abbr title="\App\View">View</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/app.html">App</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/app-datafixtures.html">DataFixtures</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    PostFixtures
+
+        <span class="phpdocumentor-element__extends">
+        extends <abbr title="\Doctrine\Bundle\FixturesBundle\Fixture">Fixture</abbr>
+    </span>
+    
+    
+    
+    </h2>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/DataFixtures/PostFixtures.php"><a href="files/src-datafixtures-postfixtures.html"><abbr title="src/DataFixtures/PostFixtures.php">PostFixtures.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">12</span>
+</aside>
+
+        
+
+
+
+
+
+
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -private">
+    <a href="classes/App-DataFixtures-PostFixtures.html#constant_POSTS">POSTS</a>
+    <span>
+        &nbsp;= [[&quot;title&quot; =&gt; &quot;Grand Place&quot;, &quot;description&quot; =&gt; &quot;Zde můžete pořídit snímek s širokoúhlým objektivem aby se budova vešla celá do záběru, nebo využít teleobjektivu a zachytit detaily věže.&quot;, &quot;latitude&quot; =&gt; 50.84678, &quot;longitude&quot; =&gt; 4.35294, &quot;photoFilename&quot; =&gt; &quot;IMG_6083.jpg&quot;], [&quot;title&quot; =&gt; &quot;Arc de Triomphe&quot;, &quot;description&quot; =&gt; &quot;Pro toto místo je obecně dobré mít širokoúhlý objektiv a pořídit snímek s fotoaparátem opravdu blízko k zemi, čímž se zvětší vizuální velikost oblouku.&quot;, &quot;latitude&quot; =&gt; 48.8742817, &quot;longitude&quot; =&gt; 2.2940412, &quot;photoFilename&quot; =&gt; &quot;IMG_6260.jpg&quot;], [&quot;title&quot; =&gt; &quot;Eiffelova vež z Trocadera&quot;, &quot;description&quot; =&gt; &quot;Jděte tam brzy. Velmi rušné a někdy bláznivě přeplněné. Pokud je to možné, použijte stativ. Dávejte pozor na lidi, kteří se mohou motat okolo vašeho fotoaparátu, aby pořídili jejich snímky.&quot;, &quot;latitude&quot; =&gt; 48.86208, &quot;longitude&quot; =&gt; 2.28869, &quot;photoFilename&quot; =&gt; &quot;IMG_6312.jpg&quot;], [&quot;title&quot; =&gt; &quot;Eiffelova vež z Port Debilly&quot;, &quot;description&quot; =&gt; &quot;Hledejte pěkný záběr mezi stromy a pokuste se dostat nějaké lodě do popředí&quot;, &quot;latitude&quot; =&gt; 48.85943, &quot;longitude&quot; =&gt; 2.29054, &quot;photoFilename&quot; =&gt; &quot;IMG_6332.jpg&quot;], [&quot;title&quot; =&gt; &quot;Notre Dame z lodi&quot;, &quot;description&quot; =&gt; &quot;Notre Dam se dá krásně zachytit i z řeky.&quot;, &quot;latitude&quot; =&gt; 48.85332, &quot;longitude&quot; =&gt; 2.34698, &quot;photoFilename&quot; =&gt; &quot;IMG_6394.jpg&quot;], [&quot;title&quot; =&gt; &quot;Sacre Coeur&quot;, &quot;description&quot; =&gt; &quot;Krásné místo s výhledem na Paříž. tím, že je budova na vrcholu kopce, lze zachytit obklopena oblohou s ničím nerušeným výhledem na západ slunce&quot;, &quot;latitude&quot; =&gt; 48.88452, &quot;longitude&quot; =&gt; 2.34344, &quot;photoFilename&quot; =&gt; &quot;IMG_6420.jpg&quot;], [&quot;title&quot; =&gt; &quot;Alpe d&#039;Huez&quot;, &quot;description&quot; =&gt; &quot;Nádherné západy a východy slunce ve Francouzkých Alpách&quot;, &quot;latitude&quot; =&gt; 45.085657, &quot;longitude&quot; =&gt; 6.092838, &quot;photoFilename&quot; =&gt; &quot;IMG_6799.jpg&quot;], [&quot;title&quot; =&gt; &quot;Verdon Gorge&quot;, &quot;description&quot; =&gt; &quot;Zde můžete pořídit spoustu dobrých snímků. Kaňon je celý osvětlen pouze slunečním světlem kolem poledne. Ale to nejlepší světlo nastává až večer.&quot;, &quot;latitude&quot; =&gt; 43.78098, &quot;longitude&quot; =&gt; 6.39044, &quot;photoFilename&quot; =&gt; &quot;IMG_6851.jpg&quot;], [&quot;title&quot; =&gt; &quot;Collégiale Saint Paul&quot;, &quot;description&quot; =&gt; &quot;Malé náměstíčko v kouzelném historickém městečku. Chodtě s hlavou nahoru, je zde spousta krásných věžiček.&quot;, &quot;latitude&quot; =&gt; 43.69699, &quot;longitude&quot; =&gt; 7.12208, &quot;photoFilename&quot; =&gt; &quot;IMG_7064.jpg&quot;], [&quot;title&quot; =&gt; &quot;Saint-Paul-de-Vence&quot;, &quot;description&quot; =&gt; &quot;Zde můžete vyfotit spoustu krásných uliček v tomto malebném historickém městečku.&quot;, &quot;latitude&quot; =&gt; 43.69682, &quot;longitude&quot; =&gt; 7.122501, &quot;photoFilename&quot; =&gt; &quot;IMG_7083.jpg&quot;], [&quot;title&quot; =&gt; &quot;Dvě věže&quot;, &quot;description&quot; =&gt; &quot;Hned dvě šikmé věže vedle sebe. Bohužel je zde spousta tolejí, takže je třeba najít takové místo, kde lze obě věže vyfotit aniž by byly překryté trolejemi.&quot;, &quot;latitude&quot; =&gt; 44.494561, &quot;longitude&quot; =&gt; 11.346591, &quot;photoFilename&quot; =&gt; &quot;IMG_7246.jpg&quot;], [&quot;title&quot; =&gt; &quot;Most vzdechů&quot;, &quot;description&quot; =&gt; &quot;Nejlepší čas na focení je brzy ráno, protože přes den je toto místo přeplněné turisty.&quot;, &quot;latitude&quot; =&gt; 45.433714, &quot;longitude&quot; =&gt; 12.3409, &quot;photoFilename&quot; =&gt; &quot;IMG_7328.jpg&quot;]]                    </span>
+</dt>
+<dd></dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/App-DataFixtures-PostFixtures.html#property_uploadHelper">$uploadHelper</a>
+    <span>
+                &nbsp;: <a href="classes/App-Service-UploadHelper.html"><abbr title="\App\Service\UploadHelper">UploadHelper</abbr></a>            </span>
+</dt>
+<dd></dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/App-DataFixtures-PostFixtures.html#method___construct">__construct()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>PostFixtures constructor</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/App-DataFixtures-PostFixtures.html#method_load">load()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Generates dummy posts in the database</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/App-DataFixtures-PostFixtures.html#method_fakeUploadPhoto">fakeUploadPhoto()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Fakes uploading of a photo</dd>
+
+        </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/App-DataFixtures-PostFixtures.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -constant -private ">
+    <h4 class="phpdocumentor-element__name" id="constant_POSTS">
+        POSTS
+        <a href="classes/App-DataFixtures-PostFixtures.html#constant_POSTS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/DataFixtures/PostFixtures.php"><a href="files/src-datafixtures-postfixtures.html"><abbr title="src/DataFixtures/PostFixtures.php">PostFixtures.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">14</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">POSTS</span>
+    = <span class="phpdocumentor-signature__default-value">[[&quot;title&quot; =&gt; &quot;Grand Place&quot;, &quot;description&quot; =&gt; &quot;Zde můžete pořídit snímek s širokoúhlým objektivem aby se budova vešla celá do záběru, nebo využít teleobjektivu a zachytit detaily věže.&quot;, &quot;latitude&quot; =&gt; 50.84678, &quot;longitude&quot; =&gt; 4.35294, &quot;photoFilename&quot; =&gt; &quot;IMG_6083.jpg&quot;], [&quot;title&quot; =&gt; &quot;Arc de Triomphe&quot;, &quot;description&quot; =&gt; &quot;Pro toto místo je obecně dobré mít širokoúhlý objektiv a pořídit snímek s fotoaparátem opravdu blízko k zemi, čímž se zvětší vizuální velikost oblouku.&quot;, &quot;latitude&quot; =&gt; 48.8742817, &quot;longitude&quot; =&gt; 2.2940412, &quot;photoFilename&quot; =&gt; &quot;IMG_6260.jpg&quot;], [&quot;title&quot; =&gt; &quot;Eiffelova vež z Trocadera&quot;, &quot;description&quot; =&gt; &quot;Jděte tam brzy. Velmi rušné a někdy bláznivě přeplněné. Pokud je to možné, použijte stativ. Dávejte pozor na lidi, kteří se mohou motat okolo vašeho fotoaparátu, aby pořídili jejich snímky.&quot;, &quot;latitude&quot; =&gt; 48.86208, &quot;longitude&quot; =&gt; 2.28869, &quot;photoFilename&quot; =&gt; &quot;IMG_6312.jpg&quot;], [&quot;title&quot; =&gt; &quot;Eiffelova vež z Port Debilly&quot;, &quot;description&quot; =&gt; &quot;Hledejte pěkný záběr mezi stromy a pokuste se dostat nějaké lodě do popředí&quot;, &quot;latitude&quot; =&gt; 48.85943, &quot;longitude&quot; =&gt; 2.29054, &quot;photoFilename&quot; =&gt; &quot;IMG_6332.jpg&quot;], [&quot;title&quot; =&gt; &quot;Notre Dame z lodi&quot;, &quot;description&quot; =&gt; &quot;Notre Dam se dá krásně zachytit i z řeky.&quot;, &quot;latitude&quot; =&gt; 48.85332, &quot;longitude&quot; =&gt; 2.34698, &quot;photoFilename&quot; =&gt; &quot;IMG_6394.jpg&quot;], [&quot;title&quot; =&gt; &quot;Sacre Coeur&quot;, &quot;description&quot; =&gt; &quot;Krásné místo s výhledem na Paříž. tím, že je budova na vrcholu kopce, lze zachytit obklopena oblohou s ničím nerušeným výhledem na západ slunce&quot;, &quot;latitude&quot; =&gt; 48.88452, &quot;longitude&quot; =&gt; 2.34344, &quot;photoFilename&quot; =&gt; &quot;IMG_6420.jpg&quot;], [&quot;title&quot; =&gt; &quot;Alpe d&#039;Huez&quot;, &quot;description&quot; =&gt; &quot;Nádherné západy a východy slunce ve Francouzkých Alpách&quot;, &quot;latitude&quot; =&gt; 45.085657, &quot;longitude&quot; =&gt; 6.092838, &quot;photoFilename&quot; =&gt; &quot;IMG_6799.jpg&quot;], [&quot;title&quot; =&gt; &quot;Verdon Gorge&quot;, &quot;description&quot; =&gt; &quot;Zde můžete pořídit spoustu dobrých snímků. Kaňon je celý osvětlen pouze slunečním světlem kolem poledne. Ale to nejlepší světlo nastává až večer.&quot;, &quot;latitude&quot; =&gt; 43.78098, &quot;longitude&quot; =&gt; 6.39044, &quot;photoFilename&quot; =&gt; &quot;IMG_6851.jpg&quot;], [&quot;title&quot; =&gt; &quot;Collégiale Saint Paul&quot;, &quot;description&quot; =&gt; &quot;Malé náměstíčko v kouzelném historickém městečku. Chodtě s hlavou nahoru, je zde spousta krásných věžiček.&quot;, &quot;latitude&quot; =&gt; 43.69699, &quot;longitude&quot; =&gt; 7.12208, &quot;photoFilename&quot; =&gt; &quot;IMG_7064.jpg&quot;], [&quot;title&quot; =&gt; &quot;Saint-Paul-de-Vence&quot;, &quot;description&quot; =&gt; &quot;Zde můžete vyfotit spoustu krásných uliček v tomto malebném historickém městečku.&quot;, &quot;latitude&quot; =&gt; 43.69682, &quot;longitude&quot; =&gt; 7.122501, &quot;photoFilename&quot; =&gt; &quot;IMG_7083.jpg&quot;], [&quot;title&quot; =&gt; &quot;Dvě věže&quot;, &quot;description&quot; =&gt; &quot;Hned dvě šikmé věže vedle sebe. Bohužel je zde spousta tolejí, takže je třeba najít takové místo, kde lze obě věže vyfotit aniž by byly překryté trolejemi.&quot;, &quot;latitude&quot; =&gt; 44.494561, &quot;longitude&quot; =&gt; 11.346591, &quot;photoFilename&quot; =&gt; &quot;IMG_7246.jpg&quot;], [&quot;title&quot; =&gt; &quot;Most vzdechů&quot;, &quot;description&quot; =&gt; &quot;Nejlepší čas na focení je brzy ráno, protože přes den je toto místo přeplněné turisty.&quot;, &quot;latitude&quot; =&gt; 45.433714, &quot;longitude&quot; =&gt; 12.3409, &quot;photoFilename&quot; =&gt; &quot;IMG_7328.jpg&quot;]]</span>
+</code>
+
+
+    
+    
+
+</article>
+            </section>
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/App-DataFixtures-PostFixtures.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_uploadHelper">
+        $uploadHelper
+        <a href="classes/App-DataFixtures-PostFixtures.html#property_uploadHelper" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/DataFixtures/PostFixtures.php"><a href="files/src-datafixtures-postfixtures.html"><abbr title="src/DataFixtures/PostFixtures.php">PostFixtures.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">104</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/App-Service-UploadHelper.html"><abbr title="\App\Service\UploadHelper">UploadHelper</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$uploadHelper</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/App-DataFixtures-PostFixtures.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/App-DataFixtures-PostFixtures.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/DataFixtures/PostFixtures.php"><a href="files/src-datafixtures-postfixtures.html"><abbr title="src/DataFixtures/PostFixtures.php">PostFixtures.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">111</span>
+</aside>
+
+        <p class="phpdocumentor-summary">PostFixtures constructor</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Service-UploadHelper.html"><abbr title="\App\Service\UploadHelper">UploadHelper</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uploadHelper</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$uploadHelper</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/App-Service-UploadHelper.html"><abbr title="\App\Service\UploadHelper">UploadHelper</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_load">
+        load()
+        <a href="classes/App-DataFixtures-PostFixtures.html#method_load" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/DataFixtures/PostFixtures.php"><a href="files/src-datafixtures-postfixtures.html"><abbr title="src/DataFixtures/PostFixtures.php">PostFixtures.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">120</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Generates dummy posts in the database</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">load</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\Persistence\ObjectManager">ObjectManager</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$manager</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$manager</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Doctrine\Persistence\ObjectManager">ObjectManager</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fakeUploadPhoto">
+        fakeUploadPhoto()
+        <a href="classes/App-DataFixtures-PostFixtures.html#method_fakeUploadPhoto" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/DataFixtures/PostFixtures.php"><a href="files/src-datafixtures-postfixtures.html"><abbr title="src/DataFixtures/PostFixtures.php">PostFixtures.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">144</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Fakes uploading of a photo</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">fakeUploadPhoto</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$photoFilename</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$photoFilename</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+            </section>
+
+    </article>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+            </div>
+        </div>
+        <a href="classes/App-DataFixtures-PostFixtures.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+</body>
+</html>

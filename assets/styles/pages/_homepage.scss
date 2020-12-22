@@ -1,8 +1,6 @@
 .left-side {
-  height: calc(100vh - 76px);
-  padding-top: $spacer * 4;
+  padding-top: $spacer * 3;
   box-shadow: $box-shadow;
-  overflow: auto;
 
   @include media-breakpoint-up(xl) {
     padding-left: $spacer * 4;
@@ -11,19 +9,80 @@
 }
 
 .slogan {
-  margin-bottom: $spacer * 2;
+  margin-bottom: $spacer;
+
+  &-lower {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    p {
+      color: $secondary;
+      font-size: 1.5rem;
+      display: inline-block;
+      margin: 0;
+    }
+
+    a {
+      white-space: nowrap;
+      margin-left: 1rem;
+    }
+  }
 
   h1 {
     font-size: 2rem;
-  }
-
-  p {
-    color: $secondary;
-    font-size: 1.5rem;
   }
 }
 
 hr {
   border: 0;
   border-top: 1px solid $gray-300;
+}
+
+.map-wrapper {
+  height: calc(100vh - #{$header-height});
+  position: sticky;
+  top: $header-height;
+
+  #map {
+    height: 100%;
+    width: calc(100% + 30px);
+    margin: 0 -15px;
+  }
+
+  .gm-style-iw-c, .gm-style-iw-d {
+    overflow: hidden !important;
+    padding: 0 !important;
+  }
+
+  .gm-ui-hover-effect {
+    transform-origin: top right;
+    transform: scale(1.5);
+  }
+
+  .info-window {
+    max-width: 250px;
+
+    &-image {
+      display: block;
+      width: 100%;
+    }
+
+    &-content {
+      padding: 1rem;
+
+      &-title {
+        font-size: 1rem;
+      }
+
+      &-description {
+        margin: .5rem 0 0;
+      }
+    }
+  }
+}
+
+.pagination {
+  justify-content: center;
+  margin: 3rem 0 5rem;
 }

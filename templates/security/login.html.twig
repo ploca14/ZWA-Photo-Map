@@ -12,19 +12,20 @@
             </a>
           </div>
           {% if error %}
-            <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+            <p class="error-general">{{ error.messageKey|trans([], 'security') }}</p>
           {% endif %}
 
-          <form method="post">
+          <form method="post" name="login">
             <div class="input-wrapper">
               <label for="username">E-mail</label>
               <input
-                type="text"
+                type="email"
                 id="username"
                 name="_username"
                 value="{{ last_username }}"
                 placeholder="name@fel.cvut.cz"
                 class="input-base"
+                required
               />
             </div>
 
@@ -36,6 +37,7 @@
                 name="_password"
                 placeholder="Heslo"
                 class="input-base"
+                required
               />
             </div>
 
@@ -52,4 +54,8 @@
       </div>
     </div>
   </div>
+{% endblock %}
+
+{% block javascripts %}
+  {{ encore_entry_script_tags('login') }}
 {% endblock %}

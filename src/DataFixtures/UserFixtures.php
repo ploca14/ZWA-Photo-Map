@@ -9,18 +9,33 @@ use Doctrine\Persistence\ObjectManager;
 
 class UserFixtures extends Fixture
 {
+    public const DefaultPassword = 'heslo123';
+
     public const AvailableUserNames = [
         'Riley', 'David', 'Stevie', 'Toby', 'Karel',
         'Oliver', 'Ash', 'Andy', 'Alex', 'Michal', 'Petr'
     ];
 
+    /**
+     * @var UserPasswordEncoderInterface
+     */
     private UserPasswordEncoderInterface $passwordEncoder;
 
+    /**
+     * UserFixtures constructor
+     *
+     * @param UserPasswordEncoderInterface $passwordEncoder
+     */
     public function __construct(UserPasswordEncoderInterface $passwordEncoder)
     {
         $this->passwordEncoder = $passwordEncoder;
     }
 
+    /**
+     * Generates dummy users in the database
+     *
+     * @param ObjectManager $manager
+     */
     public function load(ObjectManager $manager)
     {
         foreach (self::AvailableUserNames as $key => $name) {
@@ -30,7 +45,7 @@ class UserFixtures extends Fixture
             $user->setName($name);
             $user->setPassword($this->passwordEncoder->encodePassword(
                 $user,
-                'heslo123'
+                self::DefaultPassword
             ));
 
             $manager->persist($user);
@@ -43,7 +58,7 @@ class UserFixtures extends Fixture
         $user->setName('Charlie');
         $user->setPassword($this->passwordEncoder->encodePassword(
             $user,
-            'heslo123'
+            self::DefaultPassword
         ));
         $user->setRoles(['ROLE_ADMIN']);
 

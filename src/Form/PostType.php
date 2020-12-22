@@ -5,44 +5,50 @@ namespace App\Form;
 use App\Entity\Post;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Component\Form\Extension\Core\Type\NumberType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\Component\Validator\Constraints\File;
+use Symfony\Component\Validator\Constraints\Image;
 
 class PostType extends AbstractType
 {
+    /**
+     * Builds the new post form
+     *
+     * @param FormBuilderInterface $builder
+     * @param array $options
+     */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
             ->add('title', TextType::class, [
                 'label' => 'Název',
-                'required' => true,
             ])
-            ->add('description', TextType::class, [
+            ->add('description', TextareaType::class, [
                 'label' => 'Popis',
+                'attr' => [
+                    'rows' => 5,
+                ],
                 'required' => false,
             ])
             ->add('photo', FileType::class, [
-                'label' => 'Photo',
+                'label' => 'Fotka',
                 'mapped' => false,
-                'required' => true,
                 'constraints' => [
-                    new File([
-                         'maxSize' => '10240k',
-                         'mimeTypes' => [
-                             'image/jpeg',
-                             'image/png',
-                         ],
-                         'mimeTypesMessage' => 'Prosím nahrajte soubor typu JPEG, nebo PNG',
-                     ])
+                    new Image([
+                        'maxSize' => '2M',
+                    ])
                 ],
             ])
-            ->add('latitude', TextType::class, [
-                'label' => 'Zeměpisná šířka'
+            ->add('latitude', NumberType::class, [
+                'label' => 'Zeměpisná šířka',
+                'scale' => 6
             ])
-            ->add('longitude', TextType::class, [
-                'label' => 'Zeměpisná délka'
+            ->add('longitude', NumberType::class, [
+                'label' => 'Zeměpisná délka',
+                'scale' => 6
             ])
         ;
     }
