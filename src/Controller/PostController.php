@@ -38,6 +38,8 @@ class PostController extends AbstractController
      */
     public function new(Request $request, UploadHelper $uploadHelper): Response
     {
+        $this->denyAccessUnlessGranted('ROLE_USER');
+
         $post = new Post();
         $form = $this->createForm(PostType::class, $post);
         $form->handleRequest($request);
@@ -93,10 +95,16 @@ class PostController extends AbstractController
      *
      * @param Post $post
      * @param EntityManagerInterface $entityManager
+     * @param Request $request
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
-    public function postLike(Post $post, EntityManagerInterface $entityManager) {
+    public function postLike(
+        Post $post,
+        EntityManagerInterface $entityManager,
+        Request $request
+    ) {
         $this->denyAccessUnlessGranted('ROLE_USER');
+        $user = $this->getUser();
 
         if ($like = $post->getReactionForUser($user)) {
             $entityManager->remove($like);
@@ -107,7 +115,7 @@ class PostController extends AbstractController
 
         $entityManager->flush();
 
-        return $this->redirectToRoute('index');
+        return $this->redirect($request->headers->get('referer'), 301);
     }
 
     /**

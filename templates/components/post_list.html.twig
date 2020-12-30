@@ -1,4 +1,4 @@
-{% if posts is defined %}
+{% if posts is defined and posts is not empty %}
     {% for post in posts %}
       <div class="post" id="post-{{ post.id }}">
         <a href="{{ post.link }}" class="post-link"></a>
@@ -14,11 +14,10 @@
           {% if app.user %}
             <like-button
               id="{{ post.id }}"
-              class="like-button"
               {% if post.isLiked %}liked{% endif %}
             ></like-button>
             <noscript>
-              <a href="{{ path('like_post', {id: post.id}) }}">
+              <a href="{{ path('like_post', {id: post.id}) }}" class="like-button-fallback">
                 <i class="eva eva-2x eva-heart{% if not post.isLiked %}-outline{% endif %}"></i>
               </a>
             </noscript>
@@ -26,4 +25,15 @@
         </div>
       </div>
     {% endfor %}
+{% else %}
+  <div class="no-result">
+    {% if isFiltered %}
+      <h2>Zatím nemáš žádná oblíbená místa.</h2>
+      <p>
+        Když najdeš něco, co se ti bude líbit, ulož si to kliknutím na ikonku srdíčka.
+      </p>
+    {% else %}
+      <h2>Žádné výsledky</h2>
+    {% endif %}
+  </div>
 {% endif %}

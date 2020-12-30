@@ -3,8 +3,10 @@
 const form = document.forms['delete'];
 
 // Ask for confirmation when deleting
-form.addEventListener('submit', (event) => {
-  if (!confirm('Opravdu chcete tento příspěvek smazat?')) {
-    event.preventDefault()
-  }
-});
+if (form) {
+  form.addEventListener('submit', (event) => {
+    if (!confirm('Opravdu chcete tento příspěvek smazat?')) {
+      event.preventDefault()
+    }
+  });
+}

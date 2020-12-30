@@ -48,6 +48,7 @@ hr {
     height: 100%;
     width: calc(100% + 30px);
     margin: 0 -15px;
+    object-fit: cover;
   }
 
   .gm-style-iw-c, .gm-style-iw-d {
@@ -85,4 +86,12 @@ hr {
 .pagination {
   justify-content: center;
   margin: 3rem 0 5rem;
+}
+
+.no-result {
+  padding: 3rem 0;
+
+  p {
+    color: $secondary;
+  }
 }

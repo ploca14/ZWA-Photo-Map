@@ -25,6 +25,7 @@
     border: $input-border-color $input-border-width solid;
     border-radius: $input-border-radius;
     background: $white;
+    overflow: hidden;
 
     &.invalid {
       border-color: $danger;

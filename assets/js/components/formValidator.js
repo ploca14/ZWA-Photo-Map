@@ -56,6 +56,8 @@ export default class FormValidator {
     this.errors = [];
     this.form.querySelectorAll('.error')
       .forEach(element => element.remove());
+    this.form.querySelectorAll('.invalid')
+      .forEach((element) => element.classList.remove('invalid'));
   }
 
   /*

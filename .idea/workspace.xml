@@ -5,65 +5,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af7776ec-f8c0-4021-892f-d1d9094400ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/js/add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/formValidator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/photoPreview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/postMap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/_print.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/components/_like.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/pages/_add.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/pages/_detail.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/UploadHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/PostDetailView.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/components/form_errors.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/post/detail.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/projekt_zwa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projekt_zwa.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/likeButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/components/likeButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/formValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/components/formValidator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/likeButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/components/likeButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/components/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/components/_forms.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/components/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/components/_post.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/components/_post.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/components/_like.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/components/_like.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/pages/_homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/pages/_homepage.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/paginator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/paginator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6312-5fdbcd3583103.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-3168-5fe13b15119eb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-5076-5fe12313418a5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6028-5fe1d6bb44892.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6083-jpg-5fdf3e72b34ef.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6083-jpg-5fdf3efeaa694.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6260-jpg-5fdf3e72b60e9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6260-jpg-5fdf3efeae485.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6293-5fe1237024d45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6312-jpg-5fdf3e72b8563.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6312-jpg-5fdf3efeb0794.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6332-jpg-5fdf3e72ba15c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6332-jpg-5fdf3efeb2a58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6394-jpg-5fdf3e72bcada.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6394-jpg-5fdf3efeb8ed4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6420-jpg-5fdf3e72bf008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6420-jpg-5fdf3efebba1c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6799-jpg-5fdf3e72c1092.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6799-jpg-5fdf3efebe64e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6851-jpg-5fdf3e72c3089.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-6851-jpg-5fdf3efec0a2a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-7013-2-5fe140fdb21bb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-7064-jpg-5fdf3efec2f4b.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-7083-jpg-5fdf3e72c5109.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-7083-jpg-5fdf3e72c6cc8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-7083-jpg-5fdf3efeca827.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-7246-jpg-5fdf3e72c88b2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-7246-jpg-5fdf3efeccb02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-7328-jpg-5fdf3e72ca3b4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-7328-jpg-5fdf3efecf07c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-8414-5fe131a759e39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-8414-5fe131c881be1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-9316-5fe1dad1dc522.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/IMG-9351-5fe1db3315318.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/cover-5fe0fb44e5efd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photos/cover-5fe0fb4c19ea3.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/PostFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/PostFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Like.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Like.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/PostType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PostType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/LikeRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/LikeRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/PostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PostRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/SecurityUtils.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/SecurityUtils.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/HomepageView.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/HomepageView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/PostDetailView.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/PostDetailView.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/components/post_list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/post_list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/homepage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout/header.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post/_delete_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post/edit.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post/add.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/post/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/post/detail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post/detail.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
@@ -199,6 +199,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/templating" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
     </include_path>
   </component>
   <component name="ProjectId" id="1l4LBVdctavvtVmRug5gOXbI4rw" />
@@ -210,11 +211,13 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
+    <property name="database.data.extractors.current.export.id" value="Excel (xlsx)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -246,7 +249,12 @@
       <workItem from="1608399405563" duration="20981000" />
       <workItem from="1608453490361" duration="22180000" />
       <workItem from="1608547820682" duration="37978000" />
-      <workItem from="1608630993920" duration="30150000" />
+      <workItem from="1608630993920" duration="32662000" />
+      <workItem from="1609016491727" duration="697000" />
+      <workItem from="1609100429167" duration="8487000" />
+      <workItem from="1609149229858" duration="8748000" />
+      <workItem from="1609273908210" duration="4383000" />
+      <workItem from="1609348798714" duration="1683000" />
     </task>
     <servers />
   </component>
@@ -254,14 +262,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="669" y="312" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606856021368">
+    <state x="669" y="312" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609149471625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="669" y="312" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606856021368" />
-    <state x="711" y="315" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608148576809">
+    <state x="669" y="312" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609149471625" />
+    <state x="711" y="315" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609277510317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="711" y="315" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608148576809" />
+    <state x="711" y="315" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609277510317" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608407363677">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -273,12 +281,24 @@
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608645151731" />
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040/-5760.0.2194.1194@0.0.1920.1040" timestamp="1608401532705" />
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608416857498" />
+    <state x="703" y="358" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1609104460101">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="703" y="358" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609104460101" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1609349076307">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609349076307" />
     <state x="1002" y="268" key="NewPhpClassDialog" timestamp="1608645091427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1002" y="268" key="NewPhpClassDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608645091427" />
     <state x="1002" y="268" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040/-5760.0.2194.1194@0.0.1920.1040" timestamp="1608401069802" />
     <state x="1002" y="268" key="NewPhpClassDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608403176299" />
+    <state x="779" y="241" key="RollbackChangesDialog" timestamp="1609152252555">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="779" y="241" key="RollbackChangesDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609152252555" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1608148709716">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -287,11 +307,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="851" y="410" width="311" height="250" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608302781446" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608632766295">
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1609155745640">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608632766295" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608598230537" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609155745640" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1608591317946">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -305,21 +325,25 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1281" y="159" width="805" height="716" maximized="true" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606856966590" />
-    <state x="668" y="257" width="583" height="526" key="find.popup" timestamp="1608673646330">
+    <state x="668" y="257" width="583" height="526" key="find.popup" timestamp="1609276139778">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="257" width="583" height="526" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608673646330" />
+    <state x="668" y="257" width="583" height="526" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609276139778" />
     <state x="668" y="257" width="666" height="526" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608595362732" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1608640996072">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1609157729630">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608640996072" />
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608594201681" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608673648506">
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609157729630" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1609276104167">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608673648506" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609276104167" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040/-5760.0.2194.1194@0.0.1920.1040" timestamp="1608400976654" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608597778660" />
+    <state x="682" y="360" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1608674735628">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="682" y="360" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1608674735628" />
   </component>
 </project>

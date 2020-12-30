@@ -19,15 +19,23 @@ class PostDetailView
      */
     private SecurityUtils $securityUtils;
 
+    private string $publicDirectory;
+
     /**
      * PostDetailView constructor
      *
      * @param SecurityUtils $securityUtils
      * @param CacheManager $imagineCacheManager
+     * @param string $publicDirectory
      */
-    public function __construct(SecurityUtils $securityUtils,CacheManager $imagineCacheManager) {
+    public function __construct(
+        SecurityUtils $securityUtils,
+        CacheManager $imagineCacheManager,
+        string $publicDirectory
+    ) {
         $this->imagineCacheManager = $imagineCacheManager;
         $this->securityUtils = $securityUtils;
+        $this->publicDirectory = $publicDirectory;
     }
 
     /**
@@ -40,6 +48,7 @@ class PostDetailView
     {
         return [
             'post' => $this->createTransformedPost($post),
+            'staticMapUrl' => http_build_query($this->createStaticMapUrl($post)),
         ];
     }
 
@@ -60,8 +69,24 @@ class PostDetailView
             'description' => $post->getDescription(),
             'latitude' => $post->getLatitude(),
             'longitude' => $post->getLongitude(),
-            'photo' => '/uploads/photos/'.$post->getPhotoFilename(),
+            'photo' => $this->publicDirectory.'/uploads/photos/'.$post->getPhotoFilename(),
             'isLiked' => $user ? boolval($post->getReactionForUser($user)) : null,
+        ];
+    }
+
+    /**
+     * @param Post $post
+     * @return array
+     */
+    private function createStaticMapUrl(Post $post): array
+    {
+        return  [
+            "size" => "650,350",
+            "type" => "map",
+            "imagetype" => "JPEG",
+            "scalebar" => "false",
+            "key" => "cxG9e8Lld7SnlIszpwyfbbEhDt4QNbYe",
+            "pois" => "mcenter,{$post->getLatitude()},{$post->getLongitude()}",
         ];
     }
 }

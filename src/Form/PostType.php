@@ -41,14 +41,25 @@ class PostType extends AbstractType
                         'maxSize' => '2M',
                     ])
                 ],
+                'attr' => [
+                    'accept' => 'image/*'
+                ]
             ])
             ->add('latitude', NumberType::class, [
+                'html5' => true,
                 'label' => 'Zeměpisná šířka',
-                'scale' => 6
+                'scale' => 6,
+                'attr' => [
+                    'step' => 0.0000001
+                ]
             ])
             ->add('longitude', NumberType::class, [
+                'html5' => true,
                 'label' => 'Zeměpisná délka',
-                'scale' => 6
+                'scale' => 6,
+                'attr' => [
+                    'step' => 0.0000001
+                ]
             ])
         ;
     }

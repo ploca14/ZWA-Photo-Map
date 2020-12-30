@@ -5,6 +5,7 @@ export default class LikeButton extends HTMLElement {
   constructor() {
     super();
     this.id = this.getAttribute('id');
+    this.classList.add('like-button');
   }
 
   // Add event listener once element is created
@@ -45,7 +46,7 @@ export default class LikeButton extends HTMLElement {
 
   // Sends an AJAX request to the server and sets the like attribute accordingly
   sendRequest() {
-    fetch(`/post/${this.id}/like`, {
+    fetch(`/~plocivoj/public/post/${this.id}/like`, {
       method: 'POST'
     })
       .then(response => response.json())

@@ -69,3 +69,12 @@ $bubble-r: $bubble-d / 2;
     }
   }
 }
+
+.like-button-fallback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  color: $danger;
+}
