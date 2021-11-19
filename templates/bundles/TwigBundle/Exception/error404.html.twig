@@ -1,0 +1,9 @@
+{% extends '/layout.html.twig' %}
+
+{% block inner %}
+  <div class="error-page">
+    <h1 class="error-title">404</h1>
+    <p class="error-message">Omlouváme se, ale požadovaná stránka nebyla nalezena.</p>
+    <a href="{{ path('index') }}" class="btn btn-primary">Zpět na hlavní stránku</a>
+  </div>
+{% endblock %}

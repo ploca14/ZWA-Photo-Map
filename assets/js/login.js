@@ -19,7 +19,9 @@ username validator function
 @returns {string} error - if the field is invalid return an error message as a string
 */
 function validateUsername({value}) {
+  const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
   if (!value) return 'Tato hodnota nesmí být prázdná.';
+  if (!regex.test(value)) return 'Zadejte prosím e-mailovou adresu';
 }
 
 /*

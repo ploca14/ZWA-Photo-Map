@@ -11,6 +11,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\Image;
+use Symfony\Component\Validator\Constraints\NotNull;
 
 class PostType extends AbstractType
 {
@@ -37,6 +38,9 @@ class PostType extends AbstractType
                 'label' => 'Fotka',
                 'mapped' => false,
                 'constraints' => [
+                    new NotNull([
+                        'message' => 'Tato hodnota nesmí být prázdná.'
+                    ]),
                     new Image([
                         'maxSize' => '2M',
                     ])

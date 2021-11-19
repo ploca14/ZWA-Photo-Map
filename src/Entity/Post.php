@@ -32,6 +32,7 @@ class Post
     private ?string $description;
 
     /**
+     * @Assert\NotBlank()
      * @Assert\Range(
      *     min = -90,
      *     max = 90,
@@ -42,6 +43,7 @@ class Post
     private string $latitude;
 
     /**
+     * @Assert\NotBlank()
      * @Assert\Range(
      *     min = -180,
      *     max = 180,

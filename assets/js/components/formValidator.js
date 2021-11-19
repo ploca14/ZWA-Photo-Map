@@ -21,34 +21,55 @@ export default class FormValidator {
   createEventListeners() {
     this.form.addEventListener('submit', (event) => {
       // Clear any previous errors before validating
+      this.clearErrors();
       this.validateForm();
 
       // If there is at least on error
       if (this.errors.length) {
-        // Go through all the errors
-        this.errors.forEach(({ field, error }) => {
-          // Get the invalid element
-          const element = this.form[field];
-          this.createError(element, error)
-        })
+        this.renderErrors();
         event.preventDefault();
       }
     })
+
+    // For each validation in the validations object
+    for (const [field, validator] of Object.entries(this.validations)) {
+      this.form[field].addEventListener('blur', () => {
+        this.clearErrors();
+
+        this.validateField(field, validator);
+        if (this.errors.length) {
+          this.renderErrors();
+        }
+      }, true);
+    }
   }
 
   // Validates the entire form
   validateForm() {
-    this.clearErrors();
-
     // For each validation in the validations object
     for (const [field, validator] of Object.entries(this.validations)) {
-      // Check if the field is valid
-      const error = validator(this.form[field]);
-
-      if (error) {
-        this.errors.push({field, error});
-      }
+      this.validateField(field, validator)
     }
+  }
+
+  // Validates specific field
+  validateField(field, validator) {
+    // Check if the field is valid
+    const error = validator(this.form[field]);
+
+    if (error) {
+      this.errors.push({field, error});
+    }
+  }
+
+  // Renders errors for all invalid fields
+  renderErrors() {
+    // Go through all the errors
+    this.errors.forEach(({ field, error }) => {
+      // Get the invalid element
+      const element = this.form[field];
+      this.createError(element, error)
+    })
   }
 
   // Clears all the errors

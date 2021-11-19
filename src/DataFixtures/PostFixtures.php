@@ -14,7 +14,7 @@ class PostFixtures extends Fixture
     private const POSTS = [
         [
             "title" => "Grand Place",
-            "description" => "Zde můžete pořídit snímek s širokoúhlým objektivem aby se budova vešla celá do záběru, nebo využít teleobjektivu a zachytit detaily věže.",
+            "description" => "Zde můžete pořídit snímek s širokoúhlým objektivem, aby se budova vešla celá do záběru, nebo využít teleobjektivu a zachytit detaily věže.",
             "latitude" => 50.84678,
             "longitude" => 4.35294,
             "photoFilename" => "IMG_6083.jpg"
@@ -28,14 +28,14 @@ class PostFixtures extends Fixture
         ],
         [
             "title" => "Eiffelova vež z Trocadera",
-            "description" => "Jděte tam brzy. Velmi rušné a někdy bláznivě přeplněné. Pokud je to možné, použijte stativ. Dávejte pozor na lidi, kteří se mohou motat okolo vašeho fotoaparátu, aby pořídili jejich snímky.",
+            "description" => "Jděte tam brzy. Velmi rušné a někdy bláznivě přeplněné. Pokud je to možné, použijte stativ. Dávejte pozor na lidi, kteří se mohou motat okolo vašeho fotoaparátu, aby pořídili své snímky.",
             "latitude" => 48.86208,
             "longitude" => 2.28869,
             "photoFilename" => "IMG_6312.jpg"
         ],
         [
             "title" => "Eiffelova vež z Port Debilly",
-            "description" => "Hledejte pěkný záběr mezi stromy a pokuste se dostat nějaké lodě do popředí",
+            "description" => "Hledejte pěkný záběr mezi stromy a pokuste se dostat nějaké lodě do popředí.",
             "latitude" => 48.85943,
             "longitude" => 2.29054,
             "photoFilename" => "IMG_6332.jpg"
@@ -49,14 +49,14 @@ class PostFixtures extends Fixture
         ],
         [
             "title" => "Sacre Coeur",
-            "description" => "Krásné místo s výhledem na Paříž. tím, že je budova na vrcholu kopce, lze zachytit obklopena oblohou s ničím nerušeným výhledem na západ slunce",
+            "description" => "Krásné místo s výhledem na Paříž. Tím, že je budova na vrcholu kopce, lze ji zachytit s nic nerušenou oblohou například při západu slunce.",
             "latitude" => 48.88452,
             "longitude" => 2.34344,
             "photoFilename" => "IMG_6420.jpg"
         ],
         [
             "title" => "Alpe d'Huez",
-            "description" => "Nádherné západy a východy slunce ve Francouzkých Alpách",
+            "description" => "Nádherné západy a východy slunce ve Francouzkých Alpách.",
             "latitude" => 45.085657,
             "longitude" => 6.092838,
             "photoFilename" => "IMG_6799.jpg"
@@ -70,7 +70,7 @@ class PostFixtures extends Fixture
         ],
         [
             "title" => "Collégiale Saint Paul",
-            "description" => "Malé náměstíčko v kouzelném historickém městečku. Chodtě s hlavou nahoru, je zde spousta krásných věžiček.",
+            "description" => "Malé náměstíčko v kouzelném historickém městečku. Choďte s hlavou nahoru, je zde spousta krásných věžiček.",
             "latitude" => 43.69699,
             "longitude" => 7.12208,
             "photoFilename" => "IMG_7064.jpg"
@@ -84,7 +84,7 @@ class PostFixtures extends Fixture
         ],
         [
             "title" => "Dvě věže",
-            "description" => "Hned dvě šikmé věže vedle sebe. Bohužel je zde spousta tolejí, takže je třeba najít takové místo, kde lze obě věže vyfotit aniž by byly překryté trolejemi.",
+            "description" => "Hned dvě šikmé věže vedle sebe. Bohužel je zde spousta trolejí, takže je třeba najít takové místo, kde lze obě věže vyfotit, aniž by byly překryté trolejemi.",
             "latitude" => 44.494561,
             "longitude" => 11.346591,
             "photoFilename" => "IMG_7246.jpg"
